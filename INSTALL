@@ -19,11 +19,10 @@ INSTALLATION STEPS:
    You should edit these values according with your MySQL configs (user/password/dbname).
 5. Unzip htaccess.zip archive and place unpacked .htaccess file to root site dir for correct scripts work.
 6. If there are some sql updates in 'sql/updates' dir (rev. {LATEST_REVISION} or higher), you need to upload it to DB too.
-7. For 3D Viewer installation info read 3DViewer_info.txt
-8. For full work you need to patch MaNGOS core with tools/{SERVER}/wowarmory_patch.patch
+7. For full work you need to patch MaNGOS core with tools/{SERVER}/wowarmory_patch.patch
    and your characters DB with provided SQL update (characters.sql - in the same folder).
-9. If you use UNIX system, you need to manage access rights to allow script write data to 'cache' folder.
-10. If you have diffirent servers (MaNGOS and Trinity Core):
+8. If you use UNIX system, you need to manage access rights to allow script write data to 'cache' folder.
+9. If you have diffirent servers (MaNGOS and Trinity Core):
     Open 'includes/classes/configuration.php' and edit $ArmoryConfig['multiRealm'][{REALM_ID}]['type'] to 'trinity' or 'mangos'.
 	
 ========================
@@ -48,9 +47,8 @@ INSTALLATION STEPS:
    Вы должны изменить значения этих параметров согласно вашим настройкам MySQL (пользователь/пароль/имя базы) 
 5. Распакуйте архив htaccess.zip и поместите распакованный файл .htaccess в корень сайта для правильной работы скриптов.
 6. Если в папке 'sql/updates' присутствуют обновления для базы (ревизии {ПОСЛЕДНЯЯ_РЕВИЗИЯ} и выше), вам будет необходимо так же залить их базу. 
-7. Как установить и настроить 3D просмотрщик читайте в файле 3DViewer_info.txt
-8. Для работы страниц персонажа вам необходимо пропатчить ядро MaNGOS файлом tools/{СЕРВЕР}/wowarmory_patch.patch,
+7. Для работы страниц персонажа вам необходимо пропатчить ядро MaNGOS файлом tools/{СЕРВЕР}/wowarmory_patch.patch,
 	 а так же, базу персонажей файлом characters.sql (в папке патча).
-9. Если вы используете UNIX-систему, вам необходимо изменить права доступа к папке cache чтобы скрипт мог записывать кэшированные файлы.
-10. Если у вас запущено несколько реалмов с разными серверами (MaNGOS и Trinity Core):
+8. Если вы используете UNIX-систему, вам необходимо изменить права доступа к папке cache чтобы скрипт мог записывать кэшированные файлы.
+9. Если у вас запущено несколько реалмов с разными серверами (MaNGOS и Trinity Core):
     Откройте файл 'includes/classes/configuration.php' и измените параметр $ArmoryConfig['multiRealm'][{ИД_РЕАЛМА}]['type'] на 'trinity' или 'mangos'.
